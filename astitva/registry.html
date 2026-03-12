@@ -47,5 +47,42 @@
 
 </table>
 <!-- existing footer -->
+<script>
 
+let registryData = [];
+
+fetch('registry.json')
+  .then(response => response.json())
+  .then(data => {
+
+    registryData = data;
+    renderTable(data);
+
+  });
+
+function renderTable(data){
+
+  let table = document.getElementById("registry-table");
+  table.innerHTML = "";
+
+  data.forEach(item => {
+
+    let row = document.createElement("tr");
+
+    row.innerHTML =
+      "<td>" + item.identifier + "</td>" +
+      "<td>" + item.citation + "</td>" +
+      "<td>" + item.title + "</td>" +
+      "<td>" + item.type + "</td>" +
+      "<td>" + item.collection + "</td>" +
+      "<td>" + item.domain + "</td>" +
+      "<td><a href='" + item.url + "'>View</a></td>";
+
+    table.appendChild(row);
+
+  });
+
+}
+
+</script>
 </body>
