@@ -1,0 +1,19 @@
+
+
+astitva
+│
+├── svadhyaya
+│   │
+│   ├── template
+│   │   ├── svs-template.md
+│   │   └── svs-style.css
+│   │
+│   ├── notes
+│   │   ├── svs-0001.md
+│   │   ├── svs-0001.pdf
+│   │
+│   ├── index
+│   │   └── svs-index.md
+│   │
+│   └── register
+│       └── svs-register.md
