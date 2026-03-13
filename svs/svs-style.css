@@ -75,3 +75,31 @@ hr {
 .cover {
     min-height: 100vh;
 }
+@page {
+    margin: 2.5cm;
+}
+@page {
+    @bottom-center {
+        content: counter(page);
+        font-family: Georgia, serif;
+        font-size: 11pt;
+    }
+}
+--------------------------
+Svādhyāya Saṁhitā text
+--------------------------
+
+                 3
+@page {
+    @top-center {
+        content: "Svādhyāya Saṁhitā Research Notes";
+        font-family: Georgia, serif;
+        font-size: 10pt;
+    }
+}
+Svādhyāya Saṁhitā Research Notes
+.cover {
+    page-break-after: always;
+}
+Page 1  → Cover
+Page 2  → Document begins
